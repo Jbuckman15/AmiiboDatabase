@@ -81,4 +81,5 @@ class AmiiboItem extends HTMLElement {
     }
 }
 
+
 customElements.define('amiibo-item', AmiiboItem);
