@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Amiibo Finder</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="src/favorites.js" type="module"></script>
+</head>
+<body>
+	<!--Header Component-->
+	<amiibo-banner id="header" data-image="images/Amiibo.png"></amiibo-banner>
+
+	 <section class="section">
+		<button type="button" id="clear" class="button is-danger">Clear wishlist...</button>
+
+		<p id="debug"></p>
+
+		<hr>
+
+		<!--Results display-->
+ 		<div id="content" class="is-flex is-flex-wrap-wrap">
+ 			<p>Wishlist is empty...</p>
+		</div>
+	</section>
+	<br>
+	<br>
+	<br>
+
+	<!--Footer Component-->
+	<amiibo-footer></amiibo-footer>
+ 
+</body>
+</html>

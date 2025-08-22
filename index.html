@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Amiibo Finder</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="src/header.js" type="module"></script>
+	<script src="src/footer.js" type="module"></script>
+	<script src="src/random-image.js" type="module"></script>
+</head>
+<body>
+	<!--Header Component-->
+	<amiibo-banner id="header" data-image="images/Amiibo.png"></amiibo-banner>
+
+	<main class="section">
+		<div class="columns">
+			<div class="column is-8">
+				<p class="title">Welcome to The Amiibo Database 2.0!</p>
+				<p class="subtitle">Here, you can view every amiibo released by Nintendo 
+					by searching for its name, series, and/or type. If you find a product that
+					interests you, it can be added to your wishlist to be viewed at
+					any time.
+				</p>
+			</div>
+			<div class="column is-4">
+				<img id="randImage"></img>
+			</div>
+		</div>
+	</main>
+	
+
+	<!--Footer Component-->
+	<amiibo-footer></amiibo-footer>
+</body>
+</html>

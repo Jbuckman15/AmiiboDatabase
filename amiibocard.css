@@ -1,0 +1,25 @@
+#card {
+    position: relative;
+    padding: 2%;
+    margin: 1px;
+    height: 500px;
+    width: 225px;
+    border-color: black;
+    border-style:solid;
+    background-color:rgb(222, 247, 236);
+}
+
+img {
+    margin-top: 8%;
+    margin-left: 10%;
+    max-height: 250px;
+    max-width: 80%;
+}
+
+#favorite {
+    border-radius: 1px;
+    padding: 2px;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}

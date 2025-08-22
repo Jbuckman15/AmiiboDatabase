@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Amiibo Finder</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="src/header.js" type="module"></script>
+	<script src="src/footer.js" type="module"></script>
+</head>
+<body>
+	<!--Header Component-->
+	<amiibo-banner id="header" data-image="images/Amiibo.png"></amiibo-banner>
+
+	<main class="section">
+		<!--Project Requirements Section-->
+		<p class="title">Project Requirements</p>
+		<a href="https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-1.md">
+			https://github.com/tonethar/IGME-330-Fall-2021/blob/main/projects/project-1.md
+		</a>
+
+		<!--Resources Section-->
+		<hr>
+		<p class="title">Resources Utilized</p>
+		<a href="https://fonts.google.com/specimen/Roboto">
+			https://fonts.google.com/specimen/Roboto
+		</a><br>
+		<a href="https://github.com/tonethar/IGME-330-Master/blob/master/notes/HW-wc-3.md">
+			https://github.com/tonethar/IGME-330-Master/blob/master/notes/HW-wc-3.md
+		</a><br>
+		<a href="https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array">
+			https://stackoverflow.com/questions/4550505/getting-a-random-value-from-a-javascript-array
+		</a><br>
+		<a href="https://people.rit.edu/jmb8220/235/project2/amiibofinder.html">
+			https://people.rit.edu/jmb8220/235/project2/amiibofinder.html
+		</a><br>
+		<a href="https://github.com/tonethar/IGME-230-Master/blob/master/notes/web-apps-9.md">
+			https://github.com/tonethar/IGME-230-Master/blob/master/notes/web-apps-9.md
+		</a><br>
+		<a href="https://css-tricks.com/snippets/css/using-font-face/">
+			https://css-tricks.com/snippets/css/using-font-face/
+		</a><br>
+		<a href="https://mariopartylegacy.com/2016/06/e3-2016-new-super-mario-amiibo-coming-november-4th/amiibo-logo/">
+			https://mariopartylegacy.com/2016/06/e3-2016-new-super-mario-amiibo-coming-november-4th/amiibo-logo/
+		</a>
+
+		<!--API Section-->
+		<hr>
+		<p class="title">API Details</p>
+		<a href="https://www.amiiboapi.com/">
+			https://www.amiiboapi.com/
+		</a><br>
+		<a href="https://www.amiiboapi.com/docs/">
+			Documentation
+		</a>
+		<p>No API Key Required</p>
+
+		<!--Notes Section-->
+		<hr>
+		<p class="title">Noteworthy</p>
+		<p>Despite using the same API as I used in 235, this is definitely not a copy/paste. Firstly, I designed the entire
+			webpage around the use of web components. I used them for the header, amiibo cards, and the footer. This means if
+			I need to make a change to any of these sections, I only have to do so once instead of edit the HTML/CSS for every
+			page.<br><br>
+			Furthurmore, by utilizing Bulma, I was able to make a much more clean and professional looking website. I think the
+			best results come from the layout. I tried to replicate Amazon's layout of having search queries on the side rather
+			than the top, and to much success with Bulma.<br><br>
+			I also have a handful of small touches in here that will hopefully boost the quality. Mainly, the series query on the
+			app page gets its options from the API, so if a new series is ever added, the program will account for it. I also have
+			the home page randomly load an image from a pool that can be changed by clicking on it.
+		</p>
+
+		<!--Grading Section-->
+		<hr>
+		<p class="title">Grading</p>
+		<ol>
+			<li>Uses API and fetch to get data</li>
+			<li>Uses Bulma for display and is mobile friendly</li>
+			<li>Header, footer, and item card use Web Components</li>
+			<li>The user will be informed of when the page is searching and when/if it finds results</li>
+			<li>Items can be added to favorites (renamed wishlist to keep context of products)</li>
+			<li>Local storage is used to save items</li>
+			<li>Favorites can be cleared</li>
+			<li>API used to pull search queries to keep program up to date</li>
+			<li>Image on home page is randomly selected and can be changed by the user</li>
+			<li>Demo video submitted with project</li>
+			<li>Self Grade: 80-90% (I'm not good at grading myself so pardon the wide window)</li>
+		</ol>
+
+		<!--To Do Section-->
+		<hr>
+		<p class="title">To Do</p>
+		<ol>
+			<li>Prevent user from wishlisting item more than once</li>
+			<li>Allow for individual items to be removed from wishlist</li>
+			<li>Limit how many items can show up in search</li>
+		</ol>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		
+	</main>
+	
+
+	<!--Footer Component-->
+	<amiibo-footer></amiibo-footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+ 	<title>Amiibo Finder</title>
+
+	<!--BULMA Import-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+	<link rel="stylesheet" href="styles/stylesheet.css">
+
+	<!-- Import jQuery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="src/main.js" type="module"></script>
+</head>
+<body>
+	<!--Header Component-->
+	<amiibo-banner id="header" data-image="images/Amiibo.png"></amiibo-banner>
+
+	<main class="section">
+		<div class="columns">
+			<!--Search options-->
+			<div class="column is-2">
+				<!--Amiibo name input-->
+				<h2>Amiibo Name:</h2>
+				<input id="searchterm" type="text" size="13" maxlength="20" autofocus value="Mario" />
+
+				<!--Amiibo series dropdown-->
+				<h2>Amiibo Series:</h2>
+				<div id="seriesSearchDIV">
+					<select id="seriesSearch">
+						<option value="">Any</option>
+					</select>
+				</div>
+				
+				<!--Amiibo type options-->
+				<h2>Amiibo Type:</h2>
+				<div class="types">
+					<select id="type">
+						<option value="">Any</option>
+						<option value="figure">Figure</option>
+						<option value="card">Card</option>
+						<option value="yarn">Yarn</option>
+						<option value="band">Band</option>
+					</select>
+				</div>
+	
+				<hr>
+
+				<button type="button" id="search" class="button is-success">Search</button>
+			</div>
+
+			
+
+			<p id="debug"></p>
+
+			<hr>
+
+			<!--Results display-->
+ 			<div class="column">
+ 				<div id="content" class="is-flex is-flex-wrap-wrap">
+ 					<p>No data yet!</p>
+				</div>
+			</div>
+
+		</div>
+
+	</main>
+	<br>
+	<br>
+	<br>
+
+	<!--Footer Component-->
+	<amiibo-footer></amiibo-footer>
+</body>
+</html>
