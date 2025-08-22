@@ -1,0 +1,14 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf) format("truetype");
+}
+
+html {
+    background-color: rgb(164, 249, 211);
+    font-family: Roboto;
+}
+
+#randImage {
+    max-height: 250px;
+    max-width: 80%;
+}
